@@ -1,6 +1,6 @@
-# News Website Template
+# UniVerse News Website Template
 
-## News website template - fully responsive
+## UniVerse News website template - fully responsive
 
 
 
