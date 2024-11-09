@@ -1001,9 +1001,7 @@ input[type='submit'] {
 
 /* Author profile */ 
 .main-author-profile {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 50px;
+  margin: 50px 10px;
 }
 
 .author-profile-wrap {
