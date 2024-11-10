@@ -961,51 +961,58 @@ input[type="submit"] {
   }
 }
 
-
-/* Sign in and sign up */
+/* Main container for Sign In / Sign Up forms */
 .user-account-container {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
-  max-width: 900px;
+  flex-direction: column;
+  max-width: 500px;
   width: 100%;
   margin: 30px auto;
 }
 
-/* Left Section Styles */
-.sign-up-left-section {
-  flex: 1;
-  padding-right: 20px;
+/* Toggle Button Container */
+.toggle-container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+  background-color: #333; /* Dark grey for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-.user-account-legal {
-  margin-top: 20px;
-}
-
-.sign-up-benefits {
-  list-style: none;
-  padding: 0;
-}
-
-.sign-up-benefits li::before {
-  content: "✔";
-  margin-right: 10px;
-  color: #28a745;
-}
-
-.sign-up-logo {
-  margin-top: 20px;
-  width: 150px;
-}
-
-/* Right Section Styles */
-.sign-up-right-section {
+/* Default Toggle Button Styling */
+.toggle-button {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333; /* Match container color */
+  color: #ccc; /* Light grey text for better readability */
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Active Toggle Button Styling */
+.toggle-button.active {
+  background: linear-gradient(
+    90deg,
+    #1e90ff,
+    #007bff
+  ); /* Bright blue gradient for active state */
+  color: #fff; /* White text on active button */
+  font-weight: bold;
+}
+
+/* Form section styling */
+.form-section {
+  display: none; /* Initially hidden */
+}
+
+.form-section.active {
+  display: block; /* Show active form */
 }
 
 /* Shared Form Styles */
@@ -1014,6 +1021,7 @@ input[type="submit"] {
   font-weight: bold;
   margin-bottom: 5px;
   color: #333;
+  display: inline-block;
 }
 
 .user-account-form input[type="text"],
@@ -1026,19 +1034,14 @@ input[type="submit"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .user-account-password-container {
-  display: flex;
-  align-items: center;
   position: relative;
 }
 
-.user-account-input[type="password"] {
-  padding-right: 2.5rem;
-}
-
-/* Password Requirements */
+/* Password Requirements Styling */
 .sign-up-password-requirements {
   font-size: 14px;
   color: #666;
@@ -1056,7 +1059,7 @@ input[type="submit"] {
   color: #333;
 }
 
-/* Button Styles */
+/* Button Styling */
 .user-account-button {
   padding: 10px;
   font-size: 16px;
@@ -1065,10 +1068,17 @@ input[type="submit"] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  display: block;
+  transition: background-color 0.3s ease;
   margin-top: 10px;
+  width: 100%;
 }
 
-/* Checkbox */
+.user-account-button:hover {
+  background-color: #333;
+}
+
+/* Checkbox Styling */
 .sign-up-checkbox {
   font-size: 14px;
   color: #333;
@@ -1081,23 +1091,21 @@ input[type="submit"] {
   margin-right: 8px;
 }
 
+/* Media Query for Responsive Layout */
 @media (max-width: 768px) {
   .user-account-container {
-    flex-direction: column;
     margin: 10px;
-    gap: 0;
     width: auto;
+    max-width: unset;
   }
 
-  /* Left-align text for both sections in mobile view */
-  .sign-up-left-section,
-  .sign-up-right-section {
-    padding: 0;
-    text-align: left; /* Set to left-align text on mobile */
+  .toggle-container {
+    flex-direction: row;
   }
 
-  .sign-up-left-section {
-    margin-bottom: 20px;
+  .toggle-button {
+    padding: 10px;
+    font-size: 14px;
   }
 }
 
