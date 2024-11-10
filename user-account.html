@@ -40,15 +40,15 @@
 
       <main class="main" role="main">
         <div class="user-account-container">
-          <!-- Toggle Button for Sign In / Sign Up -->
           <div class="toggle-container">
             <button id="toggle-sign-in" class="toggle-button active">
               Sign In
             </button>
-            <button id="toggle-sign-up" class="toggle-button">Sign Up</button>
+            <button id="toggle-sign-up" class="toggle-button">
+              Sign Up
+            </button>
           </div>
 
-          <!-- Sign-In Form -->
           <div id="sign-in-form" class="form-section">
             <h1>Welcome back</h1>
             <p>
@@ -56,24 +56,24 @@
               News account.
             </p>
             <form action="index.html" class="user-account-form">
-              <label for="sign-in-email" class="user-account-label"
+              <label for="user-account-email" class="user-account-label"
                 >Email</label
               >
               <input
                 type="email"
-                id="sign-in-email"
+                id="user-account-email"
                 name="email"
                 class="user-account-input"
                 required
               />
 
-              <label for="sign-in-password" class="user-account-label"
+              <label for="user-account-password" class="user-account-label"
                 >Password</label
               >
               <div class="user-account-password-container">
                 <input
                   type="password"
-                  id="sign-in-password"
+                  id="user-account-password"
                   name="password"
                   class="user-account-input"
                   required
@@ -82,14 +82,17 @@
 
               <button type="submit" class="user-account-button">Sign In</button>
             </form>
-            <p class="sign-in-register">
+            <p class="user-account-register">
               Not signed up yet?
               <a href="#" onclick="toggleForms()">Sign up here</a>
             </p>
           </div>
 
-          <!-- Sign-Up Form -->
-          <div id="sign-up-form" class="form-section" style="display: none">
+          <div
+            id="sign-up-form"
+            class="form-section"
+            style="display: none"
+          >
             <h1>Sign up for UniVerse News</h1>
             <p>Free registration on UniVerse gives you unlimited access.</p>
             <form action="index.html" class="user-account-form">
@@ -129,12 +132,12 @@
                 <option value="United Kingdom">United Kingdom</option>
               </select>
 
-              <label for="sign-up-email" class="user-account-label"
+              <label for="user-account-email" class="user-account-label"
                 >Email address</label
               >
               <input
                 type="email"
-                id="sign-up-email"
+                id="user-account-email"
                 name="email"
                 class="user-account-input"
                 required
@@ -151,13 +154,13 @@
                 required
               />
 
-              <label for="sign-up-password" class="user-account-label"
+              <label for="user-account-password" class="user-account-label"
                 >Password</label
               >
-              <p class="sign-up-password-requirements">
+              <p class="user-account-password-requirements">
                 Password must include at least:
               </p>
-              <ul class="sign-up-password-requirements-list">
+              <ul class="user-account-password-requirements-list">
                 <li>8 characters</li>
                 <li>1 number</li>
                 <li>Upper and lowercase letters</li>
@@ -166,18 +169,18 @@
               <div class="user-account-password-container">
                 <input
                   type="password"
-                  id="sign-up-password"
+                  id="user-account-password"
                   name="password"
                   class="user-account-input"
                   required
                 />
               </div>
 
-              <label class="sign-up-checkbox">
+              <label class="user-account-checkbox">
                 <input type="checkbox" required /> I agree to receive email
                 updates about UniVerse products.
               </label>
-              <label class="sign-up-checkbox">
+              <label class="user-account-checkbox">
                 <input type="checkbox" required /> I agree to the
                 <a href="#">Terms & Conditions</a> and
                 <a href="#">Privacy Statement</a>
