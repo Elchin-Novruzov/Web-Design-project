@@ -3,13 +3,12 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Elchin Novruzov -- Lead Developer
+    Quyet Nguyen -- Developer
+    Anil Ashkar -- Developer
+    Ataberk Kushchu -- Developer
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    CSS3, HTML5, Javascript
+    jQuery, Normalize.css, Fontawsome
