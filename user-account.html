@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="The latest international news from Frivizn, featuring top stories from around the world and breaking news, as it happens."
+    />
+    <meta name="author" content="dukibu" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign in</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body id="top">
+    <div class="content-wrap">
+      <!-- Header -->
+      <header role="banner">
+        <section class="nav-section">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="index.html" title="UniVerse News Logo">UniVerse News</a>
+          </div>
+        </section>
+        <!-- end of class="nav-section"-->
+      </header>
+
+      <main class="main" role="main">
+        <div class="user-account-container">
+          <div class="toggle-container">
+            <button id="toggle-sign-in" class="toggle-button active">
+              Sign In
+            </button>
+            <button id="toggle-sign-up" class="toggle-button">
+              Sign Up
+            </button>
+          </div>
+
+          <div id="sign-in-form" class="form-section">
+            <h1>Welcome back</h1>
+            <p>
+              Enter your email address and password to sign in to your UniVerse
+              News account.
+            </p>
+            <form action="index.html" class="user-account-form">
+              <label for="user-account-email" class="user-account-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="user-account-email"
+                name="email"
+                class="user-account-input"
+                required
+              />
+
+              <label for="user-account-password" class="user-account-label"
+                >Password</label
+              >
+              <div class="user-account-password-container">
+                <input
+                  type="password"
+                  id="user-account-password"
+                  name="password"
+                  class="user-account-input"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="user-account-button">Sign In</button>
+            </form>
+            <p class="user-account-register">
+              Not signed up yet?
+              <a href="#" onclick="toggleForms()">Sign up here</a>
+            </p>
+          </div>
+
+          <div
+            id="sign-up-form"
+            class="form-section"
+            style="display: none"
+          >
+            <h1>Sign up for UniVerse News</h1>
+            <p>Free registration on UniVerse gives you unlimited access.</p>
+            <form action="index.html" class="user-account-form">
+              <label for="first-name" class="user-account-label"
+                >First name</label
+              >
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                class="user-account-input"
+                required
+              />
+
+              <label for="last-name" class="user-account-label"
+                >Last name</label
+              >
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                class="user-account-input"
+                required
+              />
+
+              <label for="country" class="user-account-label"
+                >Country / territory of residence</label
+              >
+              <select
+                id="country"
+                name="country"
+                class="user-account-input"
+                required
+              >
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+              </select>
+
+              <label for="user-account-email" class="user-account-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                id="user-account-email"
+                name="email"
+                class="user-account-input"
+                required
+              />
+
+              <label for="confirm-email" class="user-account-label"
+                >Confirm email address</label
+              >
+              <input
+                type="email"
+                id="confirm-email"
+                name="confirm-email"
+                class="user-account-input"
+                required
+              />
+
+              <label for="user-account-password" class="user-account-label"
+                >Password</label
+              >
+              <p class="user-account-password-requirements">
+                Password must include at least:
+              </p>
+              <ul class="user-account-password-requirements-list">
+                <li>8 characters</li>
+                <li>1 number</li>
+                <li>Upper and lowercase letters</li>
+                <li>1 special character</li>
+              </ul>
+              <div class="user-account-password-container">
+                <input
+                  type="password"
+                  id="user-account-password"
+                  name="password"
+                  class="user-account-input"
+                  required
+                />
+              </div>
+
+              <label class="user-account-checkbox">
+                <input type="checkbox" required /> I agree to receive email
+                updates about UniVerse products.
+              </label>
+              <label class="user-account-checkbox">
+                <input type="checkbox" required /> I agree to the
+                <a href="#">Terms & Conditions</a> and
+                <a href="#">Privacy Statement</a>
+              </label>
+
+              <button type="submit" class="user-account-button">
+                Register
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <ul class="social-media-links">
+          <li>
+            <a href="http://twitter.com"
+              ><span class="screen-reader-text">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a href="http://facebook.com"
+              ><span class="screen-reader-text">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="http://linkedin.com"
+              ><span class="screen-reader-text">LinkedIn</span></a
+            >
+          </li>
+          <li>
+            <a href="http://youtube.com"
+              ><span class="screen-reader-text">YouTube</span></a
+            >
+          </li>
+          <li>
+            <a href="http://instagram.com"
+              ><span class="screen-reader-text">Instagram</span></a
+            >
+          </li>
+        </ul>
+
+        <ul class="info-links">
+          <li><a href="#terms-of-use" title="Terms of Use">Terms of Use</a></li>
+          <li>
+            <a href="#privacy-policy" title="Privacy Policy">Privacy Policy</a>
+          </li>
+          <li><a href="#about-us" title="About Us">About Us</a></li>
+          <li><a href="#advertising" title="Advertising">Advertising</a></li>
+          <li><a href="#sitemap" title="Sitemap">Sitemap</a></li>
+        </ul>
+
+        <ul class="our-address">
+          <li>Our Address:</li>
+          <li>Kamycka 1281</li>
+          <li>Prague, 165 00</li>
+          <li>111-222-333</li>
+        </ul>
+      </div>
+      <!-- End of class="footer-links" -->
+
+      <!-- Footer Credit -->
+      <footer role="contentinfo">
+        <p>2024 &copy; by Elchin Novruzov</p>
+        <a class="scroll-top" href="#top"></a>
+      </footer>
+    </div>
+    <!-- end of class="content-wrap" -->
+
+    <!-- <script src="js/modernizr.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+    <script>
+      const toggleSignIn = document.getElementById("toggle-sign-in");
+      const toggleSignUp = document.getElementById("toggle-sign-up");
+      const signInForm = document.getElementById("sign-in-form");
+      const signUpForm = document.getElementById("sign-up-form");
+
+      function toggleForms() {
+        if (signInForm.style.display === "none") {
+          signInForm.style.display = "block";
+          signUpForm.style.display = "none";
+          toggleSignIn.classList.add("active");
+          toggleSignUp.classList.remove("active");
+        } else {
+          signInForm.style.display = "none";
+          signUpForm.style.display = "block";
+          toggleSignIn.classList.remove("active");
+          toggleSignUp.classList.add("active");
+        }
+      }
+
+      toggleSignIn.addEventListener("click", toggleForms);
+      toggleSignUp.addEventListener("click", toggleForms);
+
+      // Initialize with Sign In form visible
+      toggleForms();
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <!--
+      <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+      </script>
+      <script src="https://www.google-analytics.com/analytics.js" async defer></script> 
+    -->
+  </body>
+</html>
