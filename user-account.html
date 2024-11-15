@@ -128,8 +128,11 @@
                 required
               >
                 <option value="Czech Republic">Czech Republic</option>
+                <option value="United Kingdom">Azerbaijan</option>
+                <option value="United Kingdom">Turkey</option>
                 <option value="United States">United States</option>
                 <option value="United Kingdom">United Kingdom</option>
+                <option value="United Kingdom">Other</option>
               </select>
 
               <label for="user-account-email" class="user-account-label"
@@ -144,28 +147,29 @@
               />
 
               <label for="confirm-email" class="user-account-label"
-                >Confirm email address</label
+                >Password</label
               >
               <input
-                type="email"
+                type="password"
                 id="confirm-email"
                 name="confirm-email"
                 class="user-account-input"
                 required
               />
+              <p class="user-account-password-requirements">
+                                Password must include at least:
+                              </p>
+                              <ul class="user-account-password-requirements-list">
+                                <li>8 characters</li>
+                                <li>1 number</li>
+                                <li>Upper and lowercase letters</li>
+                                <li>1 special character</li>
+                              </ul>
 
               <label for="user-account-password" class="user-account-label"
-                >Password</label
+                >Confirm Password</label
               >
-              <p class="user-account-password-requirements">
-                Password must include at least:
-              </p>
-              <ul class="user-account-password-requirements-list">
-                <li>8 characters</li>
-                <li>1 number</li>
-                <li>Upper and lowercase letters</li>
-                <li>1 special character</li>
-              </ul>
+              
               <div class="user-account-password-container">
                 <input
                   type="password"
