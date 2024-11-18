@@ -1323,3 +1323,27 @@ input[type="submit"] {
   font-size: 16px;
   margin-top: 10px;
 }
+
+.breadcrumb {
+  padding: 30px 10px 0;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #0073e6;
+  text-decoration: none;
+}
+
+.breadcrumb a::after {
+  content: url('../icon/right-arrow.svg');
+  margin: 0 6px;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb .current {
+  color: #333;
+  font-weight: bold;
+}
