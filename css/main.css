@@ -813,6 +813,11 @@ input[type="submit"] {
    * Top News - Wide screen(min-width: 56em)
    */
 
+     .top-news-article {
+       display: grid;
+       grid-template-columns: 3fr 1fr;
+     }
+
   .top-news {
     display: grid;
     grid-template-columns: 3fr 1fr;
