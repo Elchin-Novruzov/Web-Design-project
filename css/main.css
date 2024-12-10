@@ -309,6 +309,7 @@ color: #8dbbff !important;
 
 .story-img {
   min-width: 120px;
+  max-width: 450px;
   height: auto;
 }
 
