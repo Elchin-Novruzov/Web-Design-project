@@ -1,0 +1,231 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>World</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+</head>
+
+<body>
+
+    <div class="content-wrap">
+
+
+        <!-- Header -->
+        <header role="banner">
+
+            <section class="nav-section">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="index.html" title="UniVerse News Logo">UniVerse News</a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="nav-menu" role="navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html" title="Home">Home</a></li>
+                        <li><a href="article-detail.html" title="World">World</a>
+                        <li><a href="#politics" title="Politics">Politics</a></li>
+                        <li><a href="#business" title="Business">Business</a></li>
+                        <li><a href="#sport" title="Sport">Sport</a></li>
+                        <li><a href="#entertainment" title="Entertainment">Entertainment</a></li>
+                        <li>
+                            <a href="#more" title="More">More...<span class="dropdown-toggle"
+                                    aria-expanded="false"></span>
+                                <span class="screen-reader-text">Expand child menu</span></a>
+                            <ul class="sub-menu">
+                                <li><a href="#science" title="Science">Science</a></li>
+                                <li><a href="#travel" title="Travel">Travel</a></li>
+                                <li><a href="#health" title="Health">Health</a></li>
+                                <li><a href="#style" title="Style">Style</a></li>
+                                <li><a href="#weather" title="Weather">Weather</a></li>
+                                <li><a href="#video" title="Video">Video</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="navigation-controls">
+                        <form class="search-bar" role="search" action="search.html" method="GET">
+                            <input type="text" name="query" class="search-input" placeholder="Search..."
+                                aria-label="Search" required />
+                            <button type="submit" class="search-button" aria-label="Submit Search">
+                                🔍
+                            </button>
+                        </form>
+
+                        <button class="sign-in-button sign-in-button--desktop"><a href="user-account.html">Sign
+                                In</a></button>
+                    </div>
+
+                    <div class="burger">
+                        <div class="line-1"></div>
+                        <div class="line-2"></div>
+                        <div class="line-3"></div>
+                    </div>
+                </nav>
+            </section> <!-- end of class="nav-section"-->
+
+        </header>
+
+
+        <!-- Main -->
+        <main role="main">
+            <article>
+
+                <div class="pricingTable">
+                    <h2 class="pricingTable-title">Find a plan that's right for you.</h2>
+                    <h3 class="pricingTable-subtitle">Every plan comes with a 30-day free trial.</h3>
+                
+                    <ul class="pricingTable-firstTable">
+                        <li class="pricingTable-firstTable_table">
+                            <h1 class="pricingTable-firstTable_table__header">Pulse Package</h1>
+                            <p class="pricingTable-firstTable_table__pricing"><span>$</span><span>10</span><span>Month</span></p>
+                            <ul class="pricingTable-firstTable_table__options">
+                                <li>Read Unlimited Blogs</li>
+                                <li>Comment on Blogs</li>
+                                <li>Newsletter Access</li>
+                            </ul>
+                            <button class="pricingTable-firstTable_table__getstart" id="openPopup1">Get Started Now</button>
+                        </li>
+                        <li class="pricingTable-firstTable_table">
+                            <h1 class="pricingTable-firstTable_table__header">Gold Packege</h1>
+                            <p class="pricingTable-firstTable_table__pricing"><span>$</span><span>19</span><span>Month</span></p>
+                            <ul class="pricingTable-firstTable_table__options">
+                                <li>All Pulse Benefits</li>
+                                <li>Ad-Free Experience</li>
+                                <li>Early Access to Blogs</li>
+                                <li>Exclusive Content</li>
+                                <li>VIP Support</li>
+                            </ul>
+                            <button class="pricingTable-firstTable_table__getstart" id="openPopup2">Get Started Now</button>
+                        </li>
+                        <li class="pricingTable-firstTable_table">
+                            <h1 class="pricingTable-firstTable_table__header">Author Packege</h1>
+                            <p class="pricingTable-firstTable_table__pricing"><span>$</span><span>49</span><span>Month</span></p>
+                            <ul class="pricingTable-firstTable_table__options">
+                                <li>All Gold Benefits</li>
+                                <li>Publish Your Blogs</li>
+                                <li>Custom Author Profile</li>
+                                <li>Add Your Own Ads  (3 per/Mo)</li>
+                            </ul>
+                            <button class="pricingTable-firstTable_table__getstart" id="openPopup3">Get Started Now</button>
+                        </li>
+                    </ul>
+                </div>
+
+            <!-- Popup -->
+            <div class="popup" id="popupForm">
+                <div class="popup-content">
+                    <span class="close" id="closePopup">&times;</span>
+                    <form class="checkout" id="checkoutForm" onsubmit="return false">
+                        <div class="checkout-header">
+                            <h1 class="checkout-title">
+                                Checkout
+                            </h1>
+                        </div>
+                        <p>
+                            <input type="text" id="nameField" class="checkout-input checkout-name" placeholder="Your name"
+                                autofocus>
+                            <input type="text" id="monthField" class="checkout-input checkout-exp" placeholder="MM">
+                            <input type="text" id="yearField" class="checkout-input checkout-exp" placeholder="YY">
+                        </p>
+                        <p>
+                            <input type="text" id="cardField" class="checkout-input checkout-card"
+                                placeholder="4111 1111 1111 1111">
+                            <input type="text" id="cvcField" class="checkout-input checkout-cvc" placeholder="CVC">
+                        </p>
+                        <p>
+                            <input type="submit" value="Purchase" class="checkout-btn" id="purchaseButton">
+                        </p>
+                        <p id="errorMessage" class="error-message"></p>
+                    </form>
+                </div>
+            </div>
+
+                <p class="intro-text">Choose the membership package that best fits your needs and take your experience to the next level. Whether you’re here
+                to explore unlimited blogs with the <b>Pulse Package</b>, enjoy premium perks with the <b>Gold Package</b>, or share your voice and
+                monetize your content with the <b>Author Package</b>, we’ve got something for everyone. Unlock your potential, connect with a
+                thriving community, and make the most out of your journey with us. Upgrade today and start enjoying exclusive benefits
+                designed just for you!</p>
+
+            </article> <!-- End of  class="article" -->
+
+        </main> <!-- End of  class="main-article" -->
+
+
+        <!-- Footer Links -->
+        <div class="footer-links">
+
+
+
+            <ul class="main-footer-links">
+                <li><a href="#world" title="World">World</a>
+                <li><a href="#politics" title="Politics">Politics</a></li>
+                <li><a href="#business" title="Business">Business</a></li>
+                <li><a href="#sport" title="Sport">Sport</a></li>
+                <li><a href="#entertainment" title="Entertainment">Entertainment</a></li>
+                <li><a href="#science" title="Science">Science</a></li>
+                <li><a href="#travel" title="Travel">Travel</a></li>
+                <li><a href="#health" title="Health">Health</a></li>
+                <li><a href="#style" title="Style">Style</a></li>
+                <li><a href="#weather" title="Weather">Weather</a></li>
+                <li><a href="#video" title="Video">Video</a></li>
+            </ul>
+
+            <ul class="info-links">
+                <li><a href="#terms-of-use" title="Terms of Use">Terms of Use</a></li>
+                <li><a href="#privacy-policy" title="Privacy Policy">Privacy Policy</a></li>
+                <li><a href="#about-us" title="About Us">About Us</a></li>
+                <li><a href="#advertising" title="Advertising">Advertising</a></li>
+                <li><a href="#sitemap" title="Sitemap">Sitemap</a></li>
+            </ul>
+
+            <ul class="our-address">
+                <li>Our Address:</li>
+                <li>Kamycka 1281</li>
+                <li>Prague, 165 00</li>
+                <li>111-222-333</li>
+            </ul>
+
+            <ul class="social-media-links">
+                <div class="social-container">
+                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </ul>
+
+        </div> <!-- End of class="footer-links" -->
+
+        <!-- Footer Credit -->
+        <footer role="contentinfo">
+            <p class="footer-title">&copy; 2024 Universe News. All rights reserved.</p>
+            <p class="footer-authors">Authors: Elchin Novruzov, Quyet Nguyen, Anil Aksar, Ataberk Kuscu</p>
+            <a class="scroll-top" href="#top"></a>
+        </footer>
+
+    </div> <!-- end of class="content-wrap" -->
+
+
+    <!-- <script src="js/modernizr.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
