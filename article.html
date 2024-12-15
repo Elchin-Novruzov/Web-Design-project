@@ -11,9 +11,7 @@
     <title>Home</title>
 
     <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700|Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -25,27 +23,27 @@
 
         <!-- Header -->
         <header role="banner">
-
+        
             <section class="nav-section">
-
+        
                 <!-- Logo -->
                 <div class="logo">
                     <a href="index.html" title="UniVerse News Logo">UniVerse News</a>
                 </div>
-
+        
                 <!-- Navigation -->
                 <nav class="nav-menu" role="navigation">
                     <ul class="nav-links">
-                        <li><a href="index.html" title="Home">Home</a></li>
-                        <li><a href="article.html" id="curr-menu-item" title="World">World</a>
+                        <li><a href="index.html"  title="Home">Home</a></li>
+                        <li><a href="article.html" title="World">World</a>
                         <li><a href="article.html" title="Politics">Politics</a></li>
                         <li><a href="article.html" title="Business">Business</a></li>
                         <li><a href="article.html" title="Sport">Sport</a></li>
                         <li><a href="article.html" title="Entertainment">Entertainment</a></li>
                         <li>
-                            <a href="#more" title="More">More...<span class="dropdown-toggle"
+                            <a href="#more" title="More" class="sub-menu">More...<span class="dropdown-toggle sub-menu"
                                     aria-expanded="false"></span>
-                                <span class="screen-reader-text">Expand child menu</span></a>
+                                <span class="screen-reader-text sub-menu">Expand child menu</span></a>
                             <ul class="sub-menu">
                                 <li><a href="article.html" title="Science">Science</a></li>
                                 <li><a href="article.html" title="Travel">Travel</a></li>
@@ -56,34 +54,19 @@
                             </ul>
                         </li>
                     </ul>
-
+        
                     <div class="navigation-controls">
-                        <form
-                          class="search-bar"
-                          role="search"
-                          action="search.html"
-                          method="GET"
-                        >
-                          <input
-                            type="text"
-                            name="query"
-                            class="search-input"
-                            placeholder="Search..."
-                            aria-label="Search"
-                            required
-                          />
-                          <button
-                            type="submit"
-                            class="search-button"
-                            aria-label="Submit Search"
-                          >
-                            🔍
-                          </button>
+                        <form class="search-bar" role="search" action="search.html" method="GET">
+                            <input type="text" name="query" class="search-input" placeholder="Search..." aria-label="Search"
+                                required />
+                            <button type="submit" class="search-button" aria-label="Submit Search">
+                                🔍
+                            </button>
                         </form>
-            
+        
                         <button class="sign-in-button sign-in-button--desktop"><a href="user-account.html">Sign In</a></button>
-                      </div>
-                      
+                    </div>
+        
                     <div class="burger">
                         <div class="line-1"></div>
                         <div class="line-2"></div>
@@ -91,7 +74,7 @@
                     </div>
                 </nav>
             </section> <!-- end of class="nav-section"-->
-
+        
         </header>
 
         <!-- Main -->
@@ -118,7 +101,7 @@
                 </div>
 
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/politics5.jpg" alt="People with newspapers">
                         </div>
@@ -130,7 +113,7 @@
                 </div>
 
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/politics9.jpg" alt="Police Officer">
                         </div>
@@ -142,9 +125,15 @@
                 </div>
 
                 <div class="story">
-                    <a href="#">
-                        <div class="story-img">
-                            <img src="images/world2.jpg" alt="London">
+                    <a href="membership.html">
+                        <div class="story-img premium-image-container">
+                            <img src="images/world2.jpg" alt="London" class="premium-image">
+                            <span class="overlay">
+                                <span class="overlay-content">
+                                    <i class="fas fa-lock lock-icon"></i>
+                                    <p>Only for Premium Members</p>
+                                </span>
+                            </span>
                         </div>
                         <div class="story-headline">
                             <h3>Political Developments</h3>
@@ -157,7 +146,7 @@
             <section class="world">
                 <h2>Important news</h2>
                 <div class="story story-1">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/politics2.jpg" alt="Protesters">
                         </div>
@@ -169,7 +158,7 @@
                 </div>
             
                 <div class="story story-2">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/politics10.jpg" alt="Police Officers">
                         </div>
@@ -181,7 +170,7 @@
                 </div>
             
                 <div class="story story-3">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/dicount.png" width="420px" alt="Aerial view of the city">
                         </div>
@@ -196,7 +185,7 @@
             <section class="sport">
                 <h2>This month</h2>
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/sport2.jpg" alt="Marathon runner">
                         </div>
@@ -208,7 +197,7 @@
                 </div>
             
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/sport5.jpg" alt="Football field">
                         </div>
@@ -220,7 +209,7 @@
                 </div>
             
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/sport6.jpg" alt="American football players">
                         </div>
@@ -232,12 +221,18 @@
                 </div>
             
                 <div class="story">
-                    <a href="#">
-                        <div class="story-img">
-                            <img src="images/sport7.jpg" alt="Sport car">
+                    <a href="membership.html">
+                        <div class="story-img premium-image-container">
+                            <img src="images/sport7.jpg" alt="London" class="premium-image">
+                            <span class="overlay">
+                                <span class="overlay-content">
+                                    <i class="fas fa-lock lock-icon"></i>
+                                    <p>Only for Premium Members</p>
+                                </span>
+                            </span>
                         </div>
                         <div class="story-headline">
-                            <h3>European Political Community Meeting</h3>
+                            <h3>New generation sport-car from Ferrari</h3>
                             <p class="exact-time">13:53h</p>
                         </div>
                     </a>
@@ -245,9 +240,9 @@
             </section> <!-- End of class="sport" -->
 
             <section class="business">
-                <h2>Last viewed</h2>
+                <h2>Last Year</h2>
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/business1.jpg" alt="Office">
                         </div>
@@ -259,7 +254,7 @@
                 </div>
                 
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/business4.jpg" alt="Computer screen">
                         </div>
@@ -271,7 +266,7 @@
                 </div>
                 
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/business7.jpg" alt="Screen with graphic statistics">
                         </div>
@@ -283,7 +278,7 @@
                 </div>
                 
                 <div class="story">
-                    <a href="#">
+                    <a href="article-detail.html">
                         <div class="story-img">
                             <img src="images/business10.jpg" alt="Container terminal">
                         </div>
@@ -293,10 +288,17 @@
                         </div>
                     </a>
                 </div>
+                
                 <div class="story">
-                    <a href="#">
-                        <div class="story-img">
-                            <img src="images/business1.jpg" alt="Office">
+                    <a href="membership.html">
+                        <div class="story-img premium-image-container">
+                            <img src="images/business1.jpg" alt="office" class="premium-image">
+                            <span class="overlay">
+                                <span class="overlay-content">
+                                    <i class="fas fa-lock lock-icon"></i>
+                                    <p>Only for Premium Members</p>
+                                </span>
+                            </span>
                         </div>
                         <div class="story-headline">
                             <h3>Cybersecurity Threats</h3>
@@ -306,9 +308,15 @@
                 </div>
                 
                 <div class="story">
-                    <a href="#">
-                        <div class="story-img">
-                            <img src="images/business4.jpg" alt="Computer screen">
+                    <a href="membership.html">
+                        <div class="story-img premium-image-container">
+                            <img src="images/business4.jpg" alt="office" class="premium-image">
+                            <span class="overlay">
+                                <span class="overlay-content">
+                                    <i class="fas fa-lock lock-icon"></i>
+                                    <p>Only for Premium Members</p>
+                                </span>
+                            </span>
                         </div>
                         <div class="story-headline">
                             <h3>AI Revolution</h3>
@@ -317,22 +325,34 @@
                     </a>
                 </div>
                 
-                <div class="story">
-                    <a href="#">
-                        <div class="story-img">
-                            <img src="images/business7.jpg" alt="Screen with graphic statistics">
-                        </div>
-                        <div class="story-headline">
-                            <h3>Corporate Social Responsibility</h3>
-                            <p class="exact-time">13:53h</p>
-                        </div>
-                    </a>
-                </div>
+            <div class="story">
+                <a href="membership.html">
+                    <div class="story-img premium-image-container">
+                        <img src="images/business7.jpg" alt="office" class="premium-image">
+                        <span class="overlay">
+                            <span class="overlay-content">
+                                <i class="fas fa-lock lock-icon"></i>
+                                <p>Only for Premium Members</p>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="story-headline">
+                        <h3>Corporate Social Responsibility</h3>
+                        <p class="exact-time">13:53h</p>
+                    </div>
+                </a>
+            </div>
                 
                 <div class="story">
-                    <a href="#">
-                        <div class="story-img">
-                            <img src="images/business10.jpg" alt="Container terminal">
+                    <a href="membership.html">
+                        <div class="story-img premium-image-container">
+                            <img src="images/business10.jpg" alt="office" class="premium-image">
+                            <span class="overlay">
+                                <span class="overlay-content">
+                                    <i class="fas fa-lock lock-icon"></i>
+                                    <p>Only for Premium Members</p>
+                                </span>
+                            </span>
                         </div>
                         <div class="story-headline">
                             <h3>Mega-Mergers</h3>
@@ -345,56 +365,56 @@
            
             <section class="more">
                 <h2>More...</h2>
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>Rugby Autumn Internationals</h3>
                         <p class="exact-time">13:53h</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>Remote Work and the Future of the Office</h3>
                         <p class="exact-time">13:53h</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>Remote Work and the Future of the Office</h3>
                         <p class="exact-time">13:53h</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>Measles cases surge worldwide</h3>
                         <p class="exact-time">13:53h</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>Lassa Fever in Focus</h3>
                         <p class="exact-time">13:53h</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>Climate Change and Health</h3>
                         <p class="exact-time">13:53h</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>AI and Music Production</h3>
                         <p class="exact-time">13:53h</p>
                     </div>
                 </a>
 
-                <a href="#">
+                <a href="article-detail.html">
                     <div class="more-headline">
                         <h3>Streaming Dominance</h3>
                         <p class="exact-time">13:53h</p>
@@ -442,10 +462,11 @@
         
             <ul class="social-media-links">
                 <div class="social-container">
-                    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://x.com/pefczucz?lang=en" class="twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="https://m.facebook.com/CZUprague/" class="facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/czuprague?igsh=MWlrb2lrMWJ5Z2kwZA==" class="instagram"><i
+                            class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/school/czuvpraze/" class="linkedin"><i class="fa fa-linkedin"></i></a>
                 </div>
             </ul>
         
